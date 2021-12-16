@@ -1,10 +1,10 @@
 <template>
-  <div class="home">
+  <div class="cadastro">
     <header>
       <Header />
     </header>
-    <main class="centralize">
-      <Home />
+    <main class="centralize col-lg-4 col-md-8 col-xs-12">
+      <Signup />
     </main>
     <footer class="fixed-bottom p-1">
       <Footer />
@@ -13,7 +13,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+
+}
 </script>
 
 <style>
@@ -26,6 +28,9 @@ export default {}
 html,
 body{
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   background-image: url('@/static/img/banner.jpeg');
   background-size: cover;
   background-position: center;

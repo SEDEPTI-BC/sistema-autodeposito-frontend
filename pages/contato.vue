@@ -1,10 +1,10 @@
 <template>
-  <div class="home">
+  <div class="cadastro">
     <header>
       <Header />
     </header>
-    <main class="centralize">
-      <Home />
+    <main class="">
+      
     </main>
     <footer class="fixed-bottom p-1">
       <Footer />
@@ -13,7 +13,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+
+}
 </script>
 
 <style>
@@ -30,24 +32,5 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.btn-primary{
-  background-color: #93c645;
-}
-
-.btn-primary:hover{
-  background-color: #9bc957;
-}
-
-.border-primary{
-  border: #93c645;
-}
-
-.centralize{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 </style>

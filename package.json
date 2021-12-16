@@ -28,6 +28,8 @@
     "jest": "^27.0.5",
     "prettier": "^2.3.2",
     "sass-loader": "^10.2.0",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^3.0.4",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14"
   }
 }
