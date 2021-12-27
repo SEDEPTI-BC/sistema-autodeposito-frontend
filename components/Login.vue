@@ -5,13 +5,13 @@
     </div>
     <form method="post" action="">
       <div class="form-group">
-        <label for="inputLoginEmail">Email</label>
-        <input type="email" class="form-control mx-auto" name="inputLoginEmail" id="inputLoginEmail" placeholder="Informe o seu email">
+        <label for="inputLoginEmail">Informe o seu email</label>
+        <input type="email" class="form-control mx-auto" name="inputLoginEmail" id="inputLoginEmail" required>
       </div>
       <div class="form-group">
-        <label for="inputLoginPassword">Senha</label>
-        <input type="password" class="form-control mx-auto" name="inputLoginPassword" id="inputLoginPassword" aria-describedby="forgetPassword" placeholder="Informe a sua senha">
-        <small id="forgetPassword" class="form-text text-muted text-center">Esqueceu sua senha? <a class="text-secondary font-weight-bold" href="#" target="_blank">Clique aqui para recuperar!</a></small>
+        <label for="inputLoginPassword">Informe a sua senha</label>
+        <input type="password" class="form-control mx-auto" name="inputLoginPassword" id="inputLoginPassword" aria-describedby="forgetPassword" required>
+        <small id="forgetPassword" class="form-text text-muted text-center text-decoration-underline"><a class="text-secondary font-weight-bold" href="#" target="_blank">Clique aqui para recuperar sua senha.</a></small>
       </div>
       <div class="form-group text-center">
         <button type="submit" class="btn btn-primary border-primary">Entrar</button>
@@ -27,18 +27,5 @@ export default {
 </script>
 
 <style>
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-html,
-body{
-  height: 100%;
-  background-image: url('@/static/img/banner.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 </style>

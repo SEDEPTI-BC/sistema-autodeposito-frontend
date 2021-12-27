@@ -3,8 +3,8 @@
     <header>
       <Header />
     </header>
-    <main class="">
-      
+    <main class="centralize col-lg-8 col-md-12 col-xs-12">
+      <Contact />
     </main>
     <footer class="fixed-bottom p-1">
       <Footer />
@@ -19,18 +19,5 @@ export default {
 </script>
 
 <style>
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-html,
-body{
-  height: 100%;
-  background-image: url('@/static/img/banner.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 </style>
