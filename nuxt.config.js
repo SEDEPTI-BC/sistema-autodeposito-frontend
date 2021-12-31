@@ -46,8 +46,8 @@ export default {
 
   // Server configuration: https://nuxtjs.org/docs/features/configuration
   server: {
-    host: '10.7.2.239',
-    port: 3001
+    host: process.env.HOST,
+    port: process.env.PORT
   },
 
   axios: {
