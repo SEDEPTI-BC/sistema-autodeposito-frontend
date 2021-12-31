@@ -1,69 +1,113 @@
-# sistema-autodeposito-frontend
+# Frontend Autodeposite
 
-## Build Setup
+<div align="center">  
+  <img src="https://img.shields.io/badge/nuxt.js-00C58E?style=for-the-badge&logo=nuxtdotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D">
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=whit">
+  <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white">
+  <img src="https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white">
+  <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+</div>
+
+<div align="center" style="margin: 10px 0;">
+  <img src="./.github/img/banner.png" alt="exemplo imagem">
+</div>
+
+> Frontend do sistema Autodeposite para a Biblioteca Central da UFPA, desenvolvido pela SEDEPTI
+
+### Ajustes e melhorias
+
+As seguintes melhorias ainda estão em aberto:
+
+- [ ] Integração com serviços
+- [ ] Revisão de código
+- [ ] Desenvolvimento de logger
+- [ ] Revisão de testes unitários
+
+## 💻 Pré-requisitos
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+- Você instalou a versão mais recente de `NodeJS`, `Git`, `MySQL` e `Visual Studio Code` ou outra IDE de preferência.
+- Você tem uma máquina da sua preferência. De preferência sistemas baseados em `Debian 10`.
+- Você tem familiaridade com `Desenvolvimento frontend`, `Integração de serviços` e outras tecnologias adicionais.
+
+## 🚀 Instalação
+
+Para instalar, siga estas etapas:
+
+Linux, Windows e macOS:
 
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+$ git clone https://github.com/eng-gabrielscardoso/sistema-autodeposito-frontend.git
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+> Verifique se possui permissões para clonar o repositório com o administrador do projeto
 
-## Special Directories
+## ☕ Utilização
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+Para usar, siga estas etapas:
 
-### `assets`
+1. Após clonar o repositório em sua máquina, navegue até o diretório do projeto e instale as dependências:
+```bash
+$ cd sistema-autodeposito-frontend/ && npm i
+```
+2. Seguindo as práticas do [Git Flow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow), crie uma nova branch para realizar as suas alterações:
+```bash
+$ git checkout -b <branch>
+```
+>Obs.: Caso esteja utilizando sistemas Linux baseados em Debian, pode ser feita a instalação do plugin Git-Flow com o comando
+```bash
+$ apt install git-flow
+```
+> E depois utilizar os comandos customizados
+```bash
+$ git flow init && git flow <tipo-branch> start <nome-branch>
+```
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+## 📫 Contribuição
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+Para contribuir com projeto Perguntas e Respostas, siga estas etapas:
 
-### `components`
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+## 🤝 Colaboradores
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-### `layouts`
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/eng-gabrielscardoso" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/67348001" width="100px;" alt="Foto do Gabriel Cardoso"/><br>
+        <sub>
+          <b>Gabriel Cardoso</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/CylonSam" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/13972190?v=4" width="100px;" alt="Foto de Samantha L A Silva "/><br>
+        <sub>
+          <b>Samantha L A Silva</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+## 😄 Seja um dos contribuidores<br>
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+Quer fazer parte desse projeto? Clique [AQUI](.github/CONTRIBUTING.md) e leia como contribuir.
 
+## 📝 Licença
 
-### `pages`
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+[⬆ Voltar ao topo](#frontend-autodeposite)<br>
