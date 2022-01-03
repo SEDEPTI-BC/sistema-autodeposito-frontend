@@ -6,11 +6,11 @@
     <form method="post" action="">
       <div class="form-group">
         <label for="inputLoginEmail">Informe o seu email</label>
-        <input type="email" class="form-control mx-auto" name="inputLoginEmail" id="inputLoginEmail" required>
+        <input type="email" class="form-control mx-auto" name="inputLoginEmail" id="inputLoginEmail" v-model="inputLoginEmail" required>
       </div>
       <div class="form-group">
         <label for="inputLoginPassword">Informe a sua senha</label>
-        <input type="password" class="form-control mx-auto" name="inputLoginPassword" id="inputLoginPassword" aria-describedby="forgetPassword" required>
+        <input type="password" class="form-control mx-auto" name="inputLoginPassword" id="inputLoginPassword" aria-describedby="forgetPassword" v-model="inputLoginPassword" required>
         <small id="forgetPassword" class="form-text text-muted text-center text-decoration-underline"><a class="text-secondary font-weight-bold" href="#" target="_blank">Clique aqui para recuperar sua senha.</a></small>
       </div>
       <div class="form-group text-center">
@@ -22,7 +22,13 @@
 
 <script>
 export default {
-
+  name: 'Login',
+  data() {
+    return {
+      inputLoginEmail: '',
+      inputLoginPassword: '',
+    }
+  },
 }
 </script>
 
