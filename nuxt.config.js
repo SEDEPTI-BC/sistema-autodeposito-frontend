@@ -30,11 +30,13 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
+    '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
   ],
 
@@ -46,5 +48,19 @@ export default {
   server: {
     host: '10.7.2.239',
     port: 3001
-  }
+  },
+
+  axios: {
+    baseUrl: process.env.API_BASE_URL
+  },
+
+  apps: [
+    {
+      name: 'Autodeposite',
+      exec_mode: 'cluster',
+      instances: 'max',
+      script: './node_modules/nuxt/bin/nuxt.js',
+      args: 'start'
+    }
+  ]
 }
