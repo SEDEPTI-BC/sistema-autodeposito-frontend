@@ -1,37 +1,31 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Autodeposite | Faça o depósito de seu TCC, Monografia, Dissertação, Tese ou Livro',
+    title:
+      'Autodeposite | Faça o depósito de seu TCC, Monografia, Dissertação, Tese ou Livro',
     htmlAttrs: {
-      lang: 'pt-BR'
+      lang: 'pt-BR',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/static/css/main.css'
-  ],
+  css: ['@/static/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: ['@/plugins/vuelidate'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    '@nuxtjs/dotenv'
-  ],
+  buildModules: ['@nuxtjs/dotenv'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -41,17 +35,16 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
+  build: {},
 
   // Server configuration: https://nuxtjs.org/docs/features/configuration
   server: {
     host: process.env.HOST,
-    port: process.env.PORT
+    port: process.env.PORT,
   },
 
   axios: {
-    baseUrl: process.env.API_BASE_URL
+    baseUrl: process.env.API_BASE_URL,
   },
 
   apps: [
@@ -60,7 +53,7 @@ export default {
       exec_mode: 'cluster',
       instances: 'max',
       script: './node_modules/nuxt/bin/nuxt.js',
-      args: 'start'
-    }
-  ]
-}
+      args: 'start',
+    },
+  ],
+};
