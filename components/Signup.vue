@@ -123,16 +123,16 @@ export default {
     },
   },
   methods: {
-    async onSubmit() {
+    onSubmit() {
       if (this.$v.$invalid) {
         console.log('Form invalid');
       } else {
         this.$axios
           .post('/api/users', {
-            username: this.signupForm.name,
+            name: this.signupForm.name,
             email: this.signupForm.email,
             password: this.signupForm.password,
-            role: 'admin',
+            role: 'depositor',
           })
           .then(() => console.log('USER CREATED'));
       }
